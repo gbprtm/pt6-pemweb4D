@@ -166,7 +166,6 @@
 </head>
 <body>
     <div class="container">
-        <!-- Section Form Create -->
         <div class="form-card">
             <h2>Tambah Pembalap</h2>
             <form action="output_dasar.php" method="post">
@@ -186,7 +185,6 @@
             </form>
         </div>
 
-        <!-- Section Table Read -->
         <div class="table-card">
             <h2>Klasemen Pembalap</h2>
             <div class="table-responsive">
@@ -235,7 +233,6 @@
                 </table>
             </div>
         </div>
-<!-- Section Form Create Jadwal Balapan -->
         <div class="form-card">
             <h2>Tambah Jadwal Balapan</h2>
             <form action="tambah_jadwal.php" method="post">
@@ -263,7 +260,6 @@
             </form>
         </div>
 
-        <!-- Section Table Read Jadwal Balapan -->
         <div class="table-card">
             <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px;">
                 <h2 style="margin: 0;">Jadwal Balapan</h2>
@@ -291,7 +287,6 @@
                         
                         if(mysqli_num_rows($cek_jadwal) > 0) {
                             while($jdwl = mysqli_fetch_array($cek_jadwal)){
-                                // Badge warna untuk status
                                 $status_color = "#ccc";
                                 if($jdwl['status'] == 'Terjadwal') $status_color = "#3498db";
                                 if($jdwl['status'] == 'Sedang Berlangsung') $status_color = "#f39c12";

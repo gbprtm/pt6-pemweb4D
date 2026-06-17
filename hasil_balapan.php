@@ -166,7 +166,6 @@
         
         // Tampilkan Form
         if (!isset($_GET['id_jadwal'])) {
-            // Step 1: Pilih Jadwal
         ?>
             <form action="" method="get">
                 <label for="id_jadwal">Pilih Jadwal Balapan</label>
@@ -185,7 +184,6 @@
             </form>
         <?php
         } else {
-            // Step 2: Input Posisi per Pembalap
             $id_jadwal_terpilih = mysqli_real_escape_string($koneksi, $_GET['id_jadwal']);
             $info_jadwal = mysqli_fetch_array(mysqli_query($koneksi, "SELECT nama_event FROM jadwal_balapan WHERE id_jadwal = '$id_jadwal_terpilih'"));
         ?>

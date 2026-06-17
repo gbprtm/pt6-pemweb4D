@@ -11,7 +11,7 @@ if(isset($_POST['tambah_data'])){
               VALUES ('$nama_pembalap', '$nomor', '$tim', '$negara')"; 
 
     if(mysqli_query($koneksi, $query)){
-        echo "<script>alert('Data Pembalap berhasil ditambahkan!'); window.location.href='dasar.php';</script>";
+        echo "<script>alert('Data Pembalap ditambahkan!'); window.location.href='dasar.php';</script>";
     } else {
         echo "<script>alert('Data gagal ditambahkan!'); window.location.href='dasar.php';</script>";
     }
