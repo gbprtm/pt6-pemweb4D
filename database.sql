@@ -40,7 +40,7 @@ CREATE TABLE hasil_balapan (
     FOREIGN KEY (id_pembalap) REFERENCES pembalap(id_pembalap)
 ) ENGINE=InnoDB;
 
--- Data Dummy Sirkuit
+-- Data Dummy 
 INSERT INTO sirkuit (nama_sirkuit, lokasi, negara, panjang_km) VALUES
 ('Sirkuit Mandalika', 'Lombok', 'Indonesia', 4.310),
 ('Sepang International Circuit', 'Selangor', 'Malaysia', 5.543),
